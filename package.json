@@ -1,0 +1,22 @@
+{
+  "name": "mfe-ssr-shadow-poc",
+  "private": true,
+  "workspaces": [
+    "entrypoint",
+    "services/*"
+  ],
+  "scripts": {
+    "build:services": "npm run build -w services/billing -w services/profile",
+    "dev": "npm run build:services && concurrently -k -n entry,billing,profile -c blue,green,magenta \"npm run dev -w entrypoint\" \"npm run dev -w services/billing\" \"npm run dev -w services/profile\"",
+    "build": "npm run build:services && npm run build -w entrypoint",
+    "start": "npm run start -w entrypoint"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "next": "^16.4.2",
+    "vite": "^8.3.4"
+  }
+}

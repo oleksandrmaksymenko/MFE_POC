@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: #f3f4f6;
+  color: #111;
+}
+h2 {
+  color: red !important;
+  text-decoration: underline wavy red;
+}
+button {
+  background: yellow !important;
+}
+.card {
+  border: 5px solid red !important;
+}
+
+:root {
+  --surface: #ffffff;
+  --text: #111;
+}
+:root[data-theme='dark'] {
+  --surface: #1f2430;
+  --text: #e8e8e8;
+}
+
+header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 24px;
+  background: #111;
+  color: #fff;
+}
+header a {
+  color: #fff;
+}
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 16px;
+}

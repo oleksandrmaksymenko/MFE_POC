@@ -1,0 +1,57 @@
+:host {
+  display: block;
+  --accent: #6c3cf0;
+}
+.card {
+  font-family: Georgia, serif;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  padding: 16px 20px;
+  background: var(--surface, #fff);
+  color: var(--text, #111);
+}
+h2 {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-style: italic;
+}
+.meta {
+  margin: 0 0 12px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #fff;
+  font-size: 20px;
+}
+.name {
+  font-weight: 700;
+}
+.email {
+  font-size: 13px;
+  opacity: 0.7;
+}
+button {
+  margin-right: 8px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  border-radius: 999px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.bio {
+  margin: 12px 0 0;
+}

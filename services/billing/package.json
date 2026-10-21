@@ -1,0 +1,21 @@
+{
+  "name": "@poc/billing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n client,server \"vite build --watch\" \"vite build --ssr src/server.tsx --watch\"",
+    "build": "vite build && vite build --ssr src/server.tsx"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "typescript": "^5.9.0",
+    "vite": "^8.3.4"
+  }
+}

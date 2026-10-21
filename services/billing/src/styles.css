@@ -1,0 +1,50 @@
+/* :host замість :root, бо ми всередині shadow root */
+:host {
+  display: block;
+  --accent: #0f9d58;
+}
+.card {
+  font-family: system-ui, sans-serif;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  padding: 16px 20px;
+  background: var(--surface, #fff);
+  color: var(--text, #111);
+}
+h2 {
+  margin: 0 0 4px;
+  color: var(--accent);
+}
+.meta {
+  margin: 0 0 12px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: grid;
+  grid-template-columns: 1fr 80px 70px;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ccc;
+}
+button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.paid {
+  color: var(--accent);
+  font-weight: 600;
+}
+.debt {
+  font-weight: 700;
+  margin: 12px 0 0;
+}
